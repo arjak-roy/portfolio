@@ -1,0 +1,135 @@
+.terminal-container {
+  background: var(--surface-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  width: 100%;
+}
+
+.terminal-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.65rem 1rem;
+  background: rgba(255, 255, 255, 0.02);
+  border-bottom: 1px solid var(--border);
+}
+
+.terminal-dots {
+  display: flex;
+  gap: 6px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.dot--red {
+  background: #EF4444;
+}
+
+.dot--yellow {
+  background: #FACC15;
+}
+
+.dot--green {
+  background: #4ADE80;
+}
+
+.terminal-title {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  letter-spacing: 0.05em;
+  flex: 1;
+}
+
+.terminal-btn {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  color: var(--primary);
+  background: var(--primary-glow);
+  border: 1px solid var(--border-accent);
+  border-radius: var(--radius-sm);
+  padding: 0.25rem 0.6rem;
+  cursor: pointer;
+  transition: background var(--transition-fast), color var(--transition-fast);
+  letter-spacing: 0.04em;
+}
+
+.terminal-btn:hover {
+  background: var(--primary-glow-strong);
+}
+
+.terminal-body {
+  padding: 1rem 1.25rem;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  line-height: 1.8;
+  min-height: 200px;
+  max-height: 320px;
+  overflow-y: auto;
+}
+
+.terminal-line {
+  display: flex;
+  gap: 0.75rem;
+  color: var(--text-secondary);
+  animation: lineAppear 0.2s ease-out;
+}
+
+@keyframes lineAppear {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.terminal-line--success {
+  color: var(--accent-green);
+}
+
+.terminal-line--warning {
+  color: var(--primary);
+}
+
+.terminal-line--system {
+  color: #60A5FA;
+}
+
+.terminal-timestamp {
+  color: var(--text-dim);
+  flex-shrink: 0;
+}
+
+.terminal-msg {
+  word-break: break-word;
+}
+
+.terminal-cursor {
+  margin-top: 0.25rem;
+}
+
+.cursor-block {
+  color: var(--primary);
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+@media (max-width: 768px) {
+  .terminal-body {
+    font-size: 0.7rem;
+    padding: 0.85rem 1rem;
+    min-height: 160px;
+  }
+}
