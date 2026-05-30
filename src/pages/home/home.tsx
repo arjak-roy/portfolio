@@ -1,7 +1,7 @@
 import './home.css';
 import Nav from './components/nav/nav';
 import { type JSX } from 'react';
-import { motion } from 'framer-motion';
+import { motion, type Variants } from 'framer-motion';
 import { bubble } from './components/bubble/bubble.model';
 import Project from './components/project/project';
 import { Experience } from './components/experience/experience';
@@ -16,7 +16,7 @@ import SelectStarImage from '../../assets/SelectStar.png';
 import mlPlayground from '../../assets/ml-playground.png';
 
 /* ─── animation variants ─── */
-const sectionVariants = {
+const sectionVariants: Variants = {
   hidden: { opacity: 0, y: 24 },
   visible: {
     opacity: 1,
@@ -25,7 +25,7 @@ const sectionVariants = {
   },
 };
 
-const staggerContainer = {
+const staggerContainer: Variants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
@@ -33,7 +33,7 @@ const staggerContainer = {
   },
 };
 
-const staggerItem = {
+const staggerItem: Variants = {
   hidden: { opacity: 0, y: 16 },
   visible: {
     opacity: 1,

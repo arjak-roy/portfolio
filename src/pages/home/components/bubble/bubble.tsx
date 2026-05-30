@@ -1,8 +1,8 @@
 import './bubble.css'
-import { motion } from 'framer-motion';
+import { motion, type Variants } from 'framer-motion';
 import { bubble } from './bubble.model';
 
-const bubbleContainerVariants = {
+const bubbleContainerVariants: Variants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
@@ -13,7 +13,7 @@ const bubbleContainerVariants = {
   },
 };
 
-const bubbleVariants = {
+const bubbleVariants: Variants = {
   hidden: { opacity: 0, y: 6 },
   visible: {
     opacity: 1,

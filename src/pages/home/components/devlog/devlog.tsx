@@ -1,5 +1,5 @@
 import './devlog.css';
-import { motion } from 'framer-motion';
+import { motion, type Variants } from 'framer-motion';
 
 type DevLogEntry = {
   date: string;
@@ -9,7 +9,7 @@ type DevLogEntry = {
   link?: string;
 };
 
-const logVariants = {
+const logVariants: Variants = {
   hidden: { opacity: 0, y: 20 },
   visible: {
     opacity: 1,
