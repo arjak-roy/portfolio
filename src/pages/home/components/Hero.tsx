@@ -13,9 +13,9 @@ export default function Hero() {
     <section className="reveal-section min-h-screen flex flex-col justify-center items-center px-margin-mobile md:px-margin-desktop py-section-gap" id="hero">
       <div className="max-w-7xl w-full grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
         <div className="md:col-span-7 flex flex-col items-center md:items-start text-center md:text-left gap-8 order-2 md:order-1">
-          <div className="inline-flex items-center px-3 py-1 rounded-full bg-surface-container-high border border-glass-border font-label-sm text-label-sm text-secondary">
-            <span className="material-symbols-outlined text-[14px] mr-2" style={{ fontVariationSettings: "'FILL' 1" }}>fiber_manual_record</span>
-            AVAILABLE FOR NEW PROJECTS
+          <div className="font-label-sm text-label-sm tracking-widest uppercase flex items-center gap-2">
+            <span>✨</span>
+            <span className="animate-shimmer">Available for new projects</span>
           </div>
           <h1 className="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-text-primary tracking-tight">
             Crafting <span className="text-primary text-glow">Digital Experiences</span> with technical precision.
@@ -31,7 +31,7 @@ export default function Hero() {
               </button>
             </a>
             <a href="mailto:arjakroy2411@gmail.com">
-              <button className="glass-panel text-primary font-label-md text-label-md px-8 py-4 rounded-xl hover:bg-white/5 transition-all duration-200">
+              <button className="glass-panel text-primary font-label-md text-label-md px-8 py-4 rounded-xl hover:bg-white/5 neu-button-primary">
                 <span className="italic">Let's connect</span>
               </button>
             </a>

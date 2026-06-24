@@ -33,7 +33,7 @@ export default function Header() {
         </a>
       </nav>
       <a href="mailto:arjakroy2411@gmail.com">
-        <button className="bg-primary text-on-primary font-label-md text-label-md px-6 py-2 rounded-full hover:scale-105 transition-transform duration-200">
+        <button className="bg-primary text-on-primary font-label-md text-label-md px-6 py-2 rounded-full hover:scale-105 neu-button-primary">
           <span className="italic">Let's connect</span>
         </button>
       </a>

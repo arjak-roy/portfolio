@@ -17,7 +17,7 @@ export default function Fab() {
         href="https://github.com/Arjak-Roy"
         target="_blank"
         rel="noreferrer"
-        className="flex items-center gap-2 px-3 py-1.5 rounded-full hover:bg-white/5 transition-all duration-300 group text-text-primary hover:text-primary"
+        className="flex items-center gap-2 px-3 py-1.5 rounded-full hover:bg-white/5 neu-button group text-text-primary hover:text-primary"
       >
         <GithubIcon />
         <span className="font-label-md text-label-md hidden sm:block">
@@ -29,7 +29,7 @@ export default function Fab() {
         href="https://www.linkedin.com/in/arjak-roy-07400524a/"
         target="_blank"
         rel="noreferrer"
-        className="flex items-center gap-2 px-3 py-1.5 rounded-full hover:bg-white/5 transition-all duration-300 group text-text-primary hover:text-primary"
+        className="flex items-center gap-2 px-3 py-1.5 rounded-full hover:bg-white/5 neu-button group text-text-primary hover:text-primary"
       >
         <LinkedInIcon />
         <span className="font-label-md text-label-md hidden sm:block">
