@@ -1,7 +1,14 @@
 
-import arjakImage from '../../../assets/arjak.jpeg';
+import { useState, useEffect } from 'react';
+import arjakImage from '../../../assets/Gemini_Generated_Image_60sq1q60sq1q60sq.png';
 
 export default function Hero() {
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setIsLoaded(true), 100);
+    return () => clearTimeout(timer);
+  }, []);
   return (
     <section className="reveal-section min-h-screen flex flex-col justify-center items-center px-margin-mobile md:px-margin-desktop py-section-gap" id="hero">
       <div className="max-w-7xl w-full grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
@@ -33,7 +40,7 @@ export default function Hero() {
         <div className="md:col-span-5 flex justify-center">
           <div className="relative group">
             <div className="absolute inset-0 bg-primary/20 blur-3xl rounded-full scale-75 group-hover:scale-100 transition-transform duration-700"></div>
-            <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-3xl overflow-hidden glass-panel border-2 border-primary/20 rotate-3 group-hover:rotate-0 transition-transform duration-500">
+            <div className={`relative w-72 h-72 md:w-96 md:h-96 rounded-3xl overflow-hidden glass-panel border-2 border-primary/20 group-hover:rotate-0 transition-all duration-1000 group-hover:bg-primary ${isLoaded ? 'rotate-3 bg-white' : 'rotate-0 bg-primary'}`}>
               <img
                 className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
                 src={arjakImage}
