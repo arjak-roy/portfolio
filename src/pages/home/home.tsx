@@ -7,6 +7,7 @@ import ExperienceSection from './components/ExperienceSection';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Atmosphere from './components/Atmosphere';
+import Fab from './components/Fab';
 
 function Home() {
   useEffect(() => {
@@ -48,6 +49,7 @@ function Home() {
         <Contact />
       </main>
       <Footer />
+      <Fab />
     </>
   );
 }
