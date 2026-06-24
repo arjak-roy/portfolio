@@ -1,7 +1,7 @@
 
 import SelectStarImage from '../../../assets/SelectStar.png';
 import mlPlayground from '../../../assets/ml-playground.png';
-import portfolioImage from '../../../assets/Gemini_Generated_Image_2f305k2f305k2f30.png';
+import sketchNGuessImage from '../../../assets/image.png';
 
 export default function Work() {
   return (
@@ -71,29 +71,36 @@ export default function Work() {
             </div>
           </div>
 
-          {/* Project 3: Portfolio v2 (Moved below or next to the others, removing translate-y-12 for odd items if you want a masonry look, let's keep it simple) */}
+          {/* Project 3: Sketch-n-Guess */}
           <div className="glass-panel rounded-3xl p-8 glass-glow transition-all duration-500 group flex flex-col gap-6">
             <div className="w-full aspect-[3.18] rounded-2xl overflow-hidden glass-panel border-glass-border flex items-center justify-center bg-surface-container-low">
               <img
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                src={portfolioImage}
-                alt="Portfolio v2"
+                src={sketchNGuessImage}
+                alt="Sketch-n-Guess"
               />
             </div>
             <div className="flex flex-col gap-3">
               <div className="flex justify-between items-start">
-                <h4 className="font-headline-sm text-headline-sm text-text-primary">Portfolio v2</h4>
-                <a href="#" target="_blank" rel="noreferrer">
-                  <span className="material-symbols-outlined text-primary hover:scale-110 transition-transform">arrow_outward</span>
-                </a>
+                <h4 className="font-headline-sm text-headline-sm text-text-primary">Sketch-n-Guess</h4>
+                <div className="flex gap-4">
+                  <a href="#" target="_blank" rel="noreferrer" title="GitHub Repo">
+                    <span className="material-symbols-outlined text-primary hover:scale-110 transition-transform">code</span>
+                  </a>
+                  <a href="#" target="_blank" rel="noreferrer" title="Live Website">
+                    <span className="material-symbols-outlined text-primary hover:scale-110 transition-transform">arrow_outward</span>
+                  </a>
+                </div>
               </div>
               <p className="font-body-md text-body-md text-on-surface-variant">
-                Terminal-inspired personal portfolio built with React, TypeScript, and Framer Motion. Features a responsive system-architect aesthetic.
+                Experience the fun of drawing and guessing with our Skribbl.io-inspired web application! Gather your friends or join players from around the world in a lively online environment. Take turns drawing a secret word while others try to guess it. With room management, a scoring system, and a curated word set of 150 words, it's a simple yet engaging way to have fun and test your artistic and guessing skills.
               </p>
               <div className="flex gap-2 mt-2 flex-wrap">
-                <span className="bg-white/5 border border-glass-border font-label-sm text-label-sm px-3 py-1 rounded-full">React</span>
-                <span className="bg-white/5 border border-glass-border font-label-sm text-label-sm px-3 py-1 rounded-full">TypeScript</span>
-                <span className="bg-white/5 border border-glass-border font-label-sm text-label-sm px-3 py-1 rounded-full">Framer Motion</span>
+                <span className="bg-white/5 border border-glass-border font-label-sm text-label-sm px-3 py-1 rounded-full">Flutter</span>
+                <span className="bg-white/5 border border-glass-border font-label-sm text-label-sm px-3 py-1 rounded-full">Dart</span>
+                <span className="bg-white/5 border border-glass-border font-label-sm text-label-sm px-3 py-1 rounded-full">Node.js</span>
+                <span className="bg-white/5 border border-glass-border font-label-sm text-label-sm px-3 py-1 rounded-full">Express.js</span>
+                <span className="bg-white/5 border border-glass-border font-label-sm text-label-sm px-3 py-1 rounded-full">Socket.io</span>
               </div>
             </div>
           </div>
