@@ -1,4 +1,4 @@
-import React from 'react';
+
 
 export default function Header() {
   return (
@@ -12,6 +12,12 @@ export default function Header() {
           href="#"
         >
           About
+        </a>
+        <a
+          className="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-300"
+          href="#skills"
+        >
+          Skills
         </a>
         <a
           className="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-300"

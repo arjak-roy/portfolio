@@ -1,7 +1,8 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import Work from './components/Work';
+import SkillsSection from './components/SkillsSection';
 import ExperienceSection from './components/ExperienceSection';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
@@ -41,6 +42,7 @@ function Home() {
       <Header />
       <main className="relative z-10">
         <Hero />
+        <SkillsSection />
         <Work />
         <ExperienceSection />
         <Contact />

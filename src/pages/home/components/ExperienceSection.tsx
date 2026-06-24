@@ -1,4 +1,5 @@
-import React from 'react';
+
+import twoComsLogo from '../../../assets/2coms_logo.jpg';
 
 export default function ExperienceSection() {
   return (
@@ -11,10 +12,13 @@ export default function ExperienceSection() {
         <div className="space-y-6">
           {/* Exp Item 1 */}
           <div className="glass-panel rounded-2xl p-6 flex flex-col md:flex-row justify-between items-start md:items-center gap-4 hover:border-primary/40 transition-colors duration-300">
-            <div>
-              <p className="font-label-sm text-label-sm text-primary mb-1">February 2026 — July 2026</p>
-              <h4 className="font-headline-sm text-headline-sm text-text-primary">Software Developer Intern</h4>
-              <p className="font-body-md text-body-md text-on-surface-variant">2Coms</p>
+            <div className="flex items-center gap-6">
+              <img src={twoComsLogo} alt="2Coms Logo" className="w-16 h-16 rounded-xl object-cover" />
+              <div>
+                <p className="font-label-sm text-label-sm text-primary mb-1">February 2026 — July 2026</p>
+                <h4 className="font-headline-sm text-headline-sm text-text-primary">Software Developer Intern</h4>
+                <p className="font-body-md text-body-md text-on-surface-variant">2Coms</p>
+              </div>
             </div>
             <div className="font-label-md text-label-md bg-primary/10 text-primary px-4 py-2 rounded-lg">Internship</div>
           </div>

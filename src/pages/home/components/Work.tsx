@@ -1,6 +1,7 @@
-import React from 'react';
+
 import SelectStarImage from '../../../assets/SelectStar.png';
 import mlPlayground from '../../../assets/ml-playground.png';
+import portfolioImage from '../../../assets/Gemini_Generated_Image_2f305k2f305k2f30.png';
 
 export default function Work() {
   return (
@@ -73,9 +74,11 @@ export default function Work() {
           {/* Project 3: Portfolio v2 (Moved below or next to the others, removing translate-y-12 for odd items if you want a masonry look, let's keep it simple) */}
           <div className="glass-panel rounded-3xl p-8 glass-glow transition-all duration-500 group flex flex-col gap-6">
             <div className="w-full aspect-[3.18] rounded-2xl overflow-hidden glass-panel border-glass-border flex items-center justify-center bg-surface-container-low">
-              <div className="text-primary opacity-20">
-                <span className="material-symbols-outlined text-[80px]">architecture</span>
-              </div>
+              <img
+                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                src={portfolioImage}
+                alt="Portfolio v2"
+              />
             </div>
             <div className="flex flex-col gap-3">
               <div className="flex justify-between items-start">

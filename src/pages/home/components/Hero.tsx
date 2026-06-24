@@ -1,4 +1,4 @@
-import React from 'react';
+
 import arjakImage from '../../../assets/arjak.jpeg';
 
 export default function Hero() {
