@@ -32,7 +32,7 @@ export default function Hero() {
             </a>
             <a href="mailto:arjakroy2411@gmail.com">
               <button className="glass-panel text-primary font-label-md text-label-md px-8 py-4 rounded-xl hover:bg-white/5 transition-all duration-200">
-                Hire Me
+                <span className="italic">Let's connect</span>
               </button>
             </a>
           </div>

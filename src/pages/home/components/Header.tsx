@@ -31,16 +31,10 @@ export default function Header() {
         >
           Experience
         </a>
-        <a
-          className="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-300"
-          href="#contact"
-        >
-          Contact
-        </a>
       </nav>
       <a href="mailto:arjakroy2411@gmail.com">
         <button className="bg-primary text-on-primary font-label-md text-label-md px-6 py-2 rounded-full hover:scale-105 transition-transform duration-200">
-          Hire Me
+          <span className="italic">Let's connect</span>
         </button>
       </a>
     </header>
