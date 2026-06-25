@@ -7,7 +7,7 @@ interface SEOProps {
   image?: string;
 }
 
-export function SEO({ title, description, url = "https://arjakroy.com", image = "https://arjakroy.com/og-image.jpg" }: SEOProps) {
+export function SEO({ title, description, url = "https://arjakroy.tech", image = "https://arjakroy.tech/og-image.jpg" }: SEOProps) {
   return (
     <Helmet>
       <title>{title}</title>
