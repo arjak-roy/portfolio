@@ -8,6 +8,8 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Atmosphere from './components/Atmosphere';
 import Fab from './components/Fab';
+import { SEO } from '../../components/SEO';
+import { PersonJsonLd } from '../../components/JsonLd';
 
 function Home() {
   useEffect(() => {
@@ -39,6 +41,11 @@ function Home() {
 
   return (
     <>
+      <SEO 
+        title="Arjak Roy | AI Engineer & Full-Stack Developer" 
+        description="Portfolio of Arjak Roy, Computer Science Engineer building scalable digital infrastructures and AI solutions."
+      />
+      <PersonJsonLd />
       <Atmosphere />
       <Header />
       <main className="relative z-10">
