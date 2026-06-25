@@ -6,7 +6,7 @@ export function PersonJsonLd() {
     "@type": "Person",
     "name": "Arjak Roy",
     "jobTitle": "AI Engineer & Full-Stack Developer",
-    "url": "https://arjakroy.com",
+    "url": "https://arjakroy.tech",
     "sameAs": [
       "https://github.com/arjak-roy",
       "https://linkedin.com/in/arjak-roy" 

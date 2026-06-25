@@ -11,7 +11,7 @@ export default defineConfig({
     
     // Automatically generates sitemap.xml in the outDir
     Sitemap({
-      hostname: 'https://arjakroy.com',
+      hostname: 'https://arjakroy.tech',
       dynamicRoutes: [
         '/',
       ]
