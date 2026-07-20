@@ -12,9 +12,7 @@ export default defineConfig({
     // Automatically generates sitemap.xml in the outDir
     Sitemap({
       hostname: 'https://arjakroy.tech',
-      dynamicRoutes: [
-        '/',
-      ]
+      dynamicRoutes: []
     }),
 
     // Compresses assets (brotli / gzip) to improve LCP

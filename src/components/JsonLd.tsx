@@ -9,12 +9,12 @@ export function PersonJsonLd() {
     "url": "https://arjakroy.tech",
     "sameAs": [
       "https://github.com/arjak-roy",
-      "https://linkedin.com/in/arjak-roy" 
+      "https://linkedin.com/in/arjak-roy"
     ],
     "knowsAbout": ["React", "Next.js", "AI", "TypeScript", "SQL", "Vite", "System Design"],
     "alumniOf": {
       "@type": "CollegeOrUniversity",
-      "name": "Your University Name" // Can be updated by the user later
+      "name": "Techno International Newtown" // Can be updated by the user later
     }
   };
 
